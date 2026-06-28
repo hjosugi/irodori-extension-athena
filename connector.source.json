@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "extensionId": "irodori.athena",
+  "visibility": "public",
+  "version": "0.1.0",
+  "connector": {
+    "id": "athena.connector",
+    "engine": "athena",
+    "label": "Athena",
+    "aliases": [
+      "athena",
+      "Amazon Athena",
+      "Athena"
+    ],
+    "defaultPort": 443,
+    "wire": "lakehouse",
+    "module": "athena.driver",
+    "features": [
+      "metadata",
+      "sql"
+    ]
+  },
+  "connection": {
+    "endpoint": {
+      "modes": [
+        "cloudResource",
+        "customEndpoint",
+        "connectionString"
+      ],
+      "defaultPort": 443,
+      "fields": [
+        {
+          "id": "region",
+          "label": "AWS region",
+          "type": "string",
+          "option": "region",
+          "required": true
+        },
+        {
+          "id": "endpoint",
+          "label": "Custom endpoint",
+          "type": "uri",
+          "profileField": "host"
+        }
+      ]
+    },
+    "authMethods": [
+      "none",
+      "connectionString",
+      "awsSigV4",
+      "awsProfile",
+      "awsSso",
+      "webIdentity",
+      "sessionToken",
+      "customDriverOptions"
+    ],
+    "tls": "required",
+    "transports": "default",
+    "optionNamespaces": [
+      "lakehouse",
+      "athena",
+      "aws",
+      "catalog",
+      "objectStorage"
+    ],
+    "customDriverOptions": true
+  },
+  "runtime": {
+    "driverLinked": false
+  },
+  "source": {
+    "knowledgeEngineStatus": "recognized_no_connector",
+    "adapter": null
+  }
+}
