@@ -72,6 +72,34 @@
                 "required": true
               },
               {
+                "id": "catalog",
+                "label": "Catalog",
+                "type": "string",
+                "option": "Catalog",
+                "default": "AwsDataCatalog"
+              },
+              {
+                "id": "database",
+                "label": "Database",
+                "type": "string",
+                "profileField": "database",
+                "option": "Database",
+                "default": "default"
+              },
+              {
+                "id": "workgroup",
+                "label": "Workgroup",
+                "type": "string",
+                "option": "WorkGroup",
+                "default": "primary"
+              },
+              {
+                "id": "outputLocation",
+                "label": "S3 output location",
+                "type": "uri",
+                "option": "OutputLocation"
+              },
+              {
                 "id": "endpoint",
                 "label": "Custom endpoint",
                 "type": "uri",
@@ -105,6 +133,34 @@
               "type": "string",
               "option": "region",
               "required": true
+            },
+            {
+              "id": "catalog",
+              "label": "Catalog",
+              "type": "string",
+              "option": "Catalog",
+              "default": "AwsDataCatalog"
+            },
+            {
+              "id": "database",
+              "label": "Database",
+              "type": "string",
+              "profileField": "database",
+              "option": "Database",
+              "default": "default"
+            },
+            {
+              "id": "workgroup",
+              "label": "Workgroup",
+              "type": "string",
+              "option": "WorkGroup",
+              "default": "primary"
+            },
+            {
+              "id": "outputLocation",
+              "label": "S3 output location",
+              "type": "uri",
+              "option": "OutputLocation"
             },
             {
               "id": "endpoint",
