@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "extensionId": "irodori.athena",
   "visibility": "public",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "connector": {
     "id": "athena.connector",
     "engine": "athena",
@@ -75,10 +75,12 @@
     "authMethods": [
       "none",
       "connectionString",
+      "awsDefaultCredentialsChain",
       "awsSigV4",
       "awsProfile",
       "awsSso",
       "webIdentity",
+      "awsAssumeRole",
       "sessionToken",
       "customDriverOptions"
     ],
